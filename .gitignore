@@ -1,0 +1,21 @@
+# Fichiers et dossiers généraux à ignorer
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+/logs/
+/temp/
+
+# Exclure les fichiers de modèles binaires lourds (> 50 Mo)
+# Les fichiers de configuration (.json) seront conservés, ce qui est correct.
+
+# Dossiers contenant les modèles entraînés (Phase I et II)
+/models/final_classifier/*.bin
+/models/final_classifier/*.safetensors
+/models/final_generator/*.bin
+/models/final_generator/*.safetensors
+/models/final_generator/*.pt
+/models/final_generator/adapter_model.bin  # Pour le modèle LoRA
+
+# Exclure les fichiers de données brutes volumineuses
+/data/*.csv 
+*.zip

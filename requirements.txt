@@ -1,0 +1,10 @@
+transformers
+datasets
+accelerate
+peft
+torch # ou torch==2.x.x
+sentencepiece
+scikit-learn
+pandas
+numpy
+evaluate
